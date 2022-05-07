@@ -25,9 +25,11 @@ let objArray = [
 function keyInObjectArray(objArray, keyString) {
  // let keys = Object.keys(objArray);
 for (key of objArray){
-  
+  if (keyString === key){
+    return true
+  }
 }
-
+return false;
 }
 
 
